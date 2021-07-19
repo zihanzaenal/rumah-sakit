@@ -1,0 +1,115 @@
+.btn:hover,
+    .btn:focus {
+      outline: 0;
+    }
+.btn--primary {
+      background: #f45844;
+      color: white;
+    }
+.btn--primary:hover, .btn--primary:focus {
+        background: #f43530;
+        color: white;
+      }
+.btn--secondary {
+      background: #0098d8;
+      color: white;
+    }
+.btn--secondary:hover, .btn--secondary:focus {
+        background: #008cbc;
+        color: white;
+      }
+.btn--tertiary {
+      background: #558a86;
+      color: white;
+    }
+.btn--tertiary:hover, .btn--tertiary:focus {
+        background: #345856;
+        color: white;
+      }
+.btn--previous {
+      transition: padding .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+.btn--previous:before {
+        content: '';
+        visibility: hidden;
+        display: inline-block;
+        position: absolute;
+        background-image: url(http://mihaeltomic.com/share/previous.svg);
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: 0px 4px;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        transform: translate(-15px, 0px);
+        transition: all .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+        opacity: 0;
+      }
+.btn--previous:hover, .btn--previous:focus {
+        padding-left: 28px;
+      }
+.btn--previous:hover:before, .btn--previous:focus:before {
+          visibility: visible;
+          transform: translate(-25px, 0px);
+          opacity: 1;
+        }
+.btn--next {
+      transition: padding .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+.btn--next:after {
+        content: '';
+        visibility: hidden;
+        display: inline-block;
+        position: absolute;
+        background-image: url('http://mihaeltomic.com/share/next.svg');
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: 0px 4px;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        transform: translate(-15px, 0px);
+        transition: all .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+        opacity: 0;
+      }
+.btn--next:hover, .btn--next:focus {
+        padding-right: 28px;
+      }
+.btn--next:hover:after, .btn--next:focus:after {
+          visibility: visible;
+          transform: translate(5px, 0px);
+          opacity: 1;
+        }
+.btn--finish {
+      transition: padding .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+.btn--finish:after {
+        content: '';
+        visibility: hidden;
+        display: inline-block;
+        position: absolute;
+        background-image: url('http://mihaeltomic.com/share/check.svg');
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: -4px 3px;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        transform: translate(-15px, 0px);
+        transition: all .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+        opacity: 0;
+      }
+.btn--finish:hover, .btn--finish:focus {
+        padding-right: 28px;
+      }
+.btn--finish:hover:after, .btn--finish:focus:after {
+          visibility: visible;
+          transform: translate(5px, 0px);
+          opacity: 1;
+        }
+.btn--med {
+      font-size: 18px;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 12px;
+    }
